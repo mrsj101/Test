@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>מכירת זכות לדירה - נערדיא תיווך, יזמות ונדל״ן</title>
+  <style>
+    /* Dark luxury palette */
+    :root {
+      --bg-color: #0E0E10;
+      --bg-color-alt: #121212;
+      --text-color: #FFFFFF;
+      --text-color-muted: rgba(255, 255, 255, 0.9);
+      --accent-color: #C9A857;
+      --card-radius: 1rem;
+      --transition: all 0.3s ease;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      direction: rtl;
+      text-align: right;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    section {
+      padding: 3rem 1rem;
+    }
+
+    h1, h2, h3 {
+      margin-bottom: 1.5rem;
+      font-weight: 700;
+    }
+
+    h1 {
+      font-size: clamp(1.8rem, 5vw, 3rem);
+      line-height: 1.2;
+    }
+
+    h2 {
+      font-size: clamp(1.5rem, 4vw, 2.5rem);
+      color: var(--accent-color);
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    a {
+      color: var(--text-color);
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    a:hover {
+      color: var(--accent-color);
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: var(--accent-color);
+      color: var(--bg-color);
+      padding: 0.8rem 1.5rem;
+      border-radius: 0.5rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: var(--transition);
+      text-align: center;
+      border: none;
+    }
+
+    .btn:hover {
+      background-color: #d9b867;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(201, 168, 87, 0.3);
+    }
+
+    .card {
+      background-color: var(--bg-color-alt);
+      border-radius: var(--card-radius);
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+      transition: var(--transition);
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Header */
+    header {
+      position: sticky;
+      top: 0;
+      background-color: rgba(14, 14, 16, 0.95);
+      backdrop-filter: blur(10px);
+      padding: 1rem;
+      z-index: 100;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header-brand {
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: var(--accent-color);
+    }
+
+    .header-nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    .header-nav li {
+      margin-inline-start: 1.5rem;
+    }
+
+    .header-nav a {
+      position: relative;
+    }
+
+    .header-nav a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -5px;
+      right: 0;
+      background-color: var(--accent-color);
+      transition: var(--transition);
+    }
+
+    .header-nav a:hover::after,
+    .header-nav a.active::after {
+      width: 100%;
+    }
+
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      color: var(--text-color);
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    /* Hero */
+    .hero {
+      min-height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: linear-gradient(135deg, rgba(14, 14, 16, 0.9), rgba(18, 18, 18, 0.8)), 
+                  url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgcGF0dGVyblRyYW5zZm9ybT0icm90YXRlKDQ1KSI+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCIgaGVpZ2h0PSIxMDAiIGZpbGw9IiMwRTBFMTAiLz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxMDAiIGZpbGw9IiNDOUE4NTciIG9wYWNpdHk9IjAuMDUiLz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEiIGZpbGw9IiNDOUE4NTciIG9wYWNpdHk9IjAuMDUiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjcGF0dGVybikiLz48L3N2Zz4=');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: radial-gradient(circle at center, rgba(201, 168, 87, 0.1), transparent 60%);
+      z-index: 1;
+      animation: pulse 8s infinite alternate;
+    }
+
+    @keyframes pulse {
+      0% {
+        opacity: 0.3;
+        transform: scale(1);
+      }
+      100% {
+        opacity: 0.7;
+        transform: scale(1.2);
+      }
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+    }
+
+    .hero h1 {
+      margin-bottom: 1rem;
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      color: var(--text-color-muted);
+    }
+
+    .price-badge {
+      background-color: var(--accent-color);
+      color: var(--bg-color);
+      padding: 0.8rem 1.5rem;
+      border-radius: 0.5rem;
+      display: inline-block;
+      margin-bottom: 2rem;
+      font-weight: bold;
+      font-size: 1.2rem;
+      box-shadow: 0 5px 15px rgba(201, 168, 87, 0.3);
+    }
+
+    /* Highlights */
+    .highlights {
+      background-color: var(--bg-color-alt);
+    }
+
+    .highlights-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+    }
+
+    .highlight {
+      text-align: center;
+      padding: 1.5rem;
+      border-radius: var(--card-radius);
+      background-color: var(--bg-color);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      transition: var(--transition);
+    }
+
+    .highlight:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    .highlight-icon {
+      width: 64px;
+      height: 64px;
+      margin: 0 auto 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(201, 168, 87, 0.1);
+      border-radius: 50%;
+      color: var(--accent-color);
+      font-size: 2rem;
+    }
+
+    .highlight p {
+      font-weight: bold;
+    }
+
+    /* Area Info */
+    .area-info {
+      background-color: var(--bg-color);
+    }
+
+    .property-size {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 1.5rem;
+      color: var(--accent-color);
+      display: block;
+      padding: 0.5rem 1rem;
+      border: 1px solid var(--accent-color);
+      border-radius: 0.5rem;
+      width: fit-content;
+    }
+
+    /* Override centering for property-size */
+    #area-info .property-size {
+      display: flex !important;
+      justify-content: center;
+      align-items: center;
+      width: max-content;
+      margin: 0 auto !important;
+      text-align: center;
+    }
+
+    .about-area {
+      margin-bottom: 2rem;
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+
+    /* Gallery */
+    .gallery {
+      background-color: var(--bg-color-alt);
+    }
+
+    .gallery-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: var(--card-radius);
+      aspect-ratio: 4/3;
+      cursor: pointer;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: var(--transition);
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.1);
+    }
+
+    .gallery-item::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+      opacity: 0;
+      transition: var(--transition);
+    }
+
+    .gallery-item:hover::after {
+      opacity: 1;
+    }
+
+    /* Modal */
+    .modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.9);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      opacity: 0;
+      visibility: hidden;
+      transition: var(--transition);
+    }
+
+    .modal.show {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .modal-content {
+      position: relative;
+      max-width: 90%;
+      max-height: 90%;
+    }
+
+    .modal-image {
+      max-width: 100%;
+      max-height: 80vh;
+      border-radius: 0.5rem;
+      box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
+    }
+
+    .close-btn {
+      position: absolute;
+      top: -40px;
+      right: 0;
+      background: none;
+      border: none;
+      color: var(--text-color);
+      font-size: 2rem;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .close-btn:hover {
+      color: var(--accent-color);
+      transform: rotate(90deg);
+    }
+
+    .modal-nav {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      transform: translateY(-50%);
+    }
+
+    .modal-nav button {
+      background: rgba(0, 0, 0, 0.5);
+      color: var(--text-color);
+      border: none;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      font-size: 1.5rem;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .modal-nav button:hover {
+      background-color: var(--accent-color);
+      color: var(--bg-color);
+    }
+
+    /* Map */
+    .map {
+      background-color: var(--bg-color);
+    }
+
+    .map-title {
+      margin-bottom: 1.5rem;
+    }
+
+    .map-container {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-bottom: 28.125%; /* 16:9 aspect ratio, halved */
+      overflow: hidden;
+      border-radius: var(--card-radius);
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .map-iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    /* Lead Form */
+    .lead-form {
+      background-color: var(--bg-color-alt);
+    }
+
+    .form-container {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 0.8rem 1rem;
+      border-radius: 0.5rem;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      background-color: rgba(255, 255, 255, 0.05);
+      color: var(--text-color);
+      transition: var(--transition);
+    }
+
+    .form-group input::placeholder {
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    .form-group input:focus {
+      outline: none;
+      border-color: var(--accent-color);
+      box-shadow: 0 0 0 2px rgba(201, 168, 87, 0.2);
+    }
+
+    .form-group input:invalid {
+      border-color: #ff4d4d;
+    }
+
+    .submit-btn {
+      width: 100%;
+      padding: 1rem;
+      font-size: 1.1rem;
+    }
+
+    .submit-btn:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+      transform: none;
+      box-shadow: none;
+    }
+
+    .toast {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: var(--accent-color);
+      color: var(--bg-color);
+      padding: 1rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      z-index: 1000;
+      opacity: 0;
+      visibility: hidden;
+      transition: var(--transition);
+    }
+
+    .toast.show {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    /* Footer */
+    footer {
+      background-color: var(--bg-color);
+      padding: 2rem 1rem;
+      text-align: center;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .footer-brand {
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: var(--accent-color);
+      margin-bottom: 1rem;
+    }
+
+    .footer-nav {
+      margin-bottom: 1.5rem;
+    }
+
+    .footer-nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .footer-nav li {
+      margin: 0 0.75rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-disclaimer {
+      font-size: 0.8rem;
+      color: var(--text-color-muted);
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .year {
+      margin-top: 1rem;
+      font-size: 0.8rem;
+      color: var(--text-color-muted);
+    }
+
+    /* Privacy Policy */
+    #privacy-policy {
+      display: none;
+      padding: 2rem;
+      background-color: var(--bg-color-alt);
+      border-radius: var(--card-radius);
+      margin-top: 2rem;
+    }
+
+    #privacy-policy.show {
+      display: block;
+    }
+
+    /* Custom centering for specified headings and text */
+    #highlights h2,
+    #area-info h2,
+    #gallery h2,
+    #map h2,
+    #lead-form h2,
+    .property-size,
+    .about-area p,
+    .legal-note p {
+      text-align: center;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .header-nav ul {
+        position: fixed;
+        top: 70px;
+        right: -100%;
+        width: 80%;
+        height: calc(100vh - 70px);
+        background-color: var(--bg-color);
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 1rem;
+        transition: var(--transition);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        z-index: 99;
+      }
+
+      .header-nav ul.show {
+        right: 0;
+      }
+
+      .header-nav li {
+        margin: 1rem 0;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .highlights-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 1rem;
+      }
+
+      .gallery-container {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      }
+
+      .modal-nav {
+        width: 90%;
+        left: 5%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      section {
+        padding: 2rem 1rem;
+      }
+
+      .hero {
+        min-height: 70vh;
+      }
+
+      .price-badge {
+        font-size: 1rem;
+        padding: 0.6rem 1rem;
+      }
+
+      .highlights-container {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .gallery-container {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container header-container">
+      <div class="header-brand">נערדיא תיווך, יזמות ונדל״ן</div>
+      <nav class="header-nav">
+        <button class="menu-toggle" aria-label="תפריט">&#9776;</button>
+        <ul>
+          <li><a href="#hero" class="active">בית</a></li>
+          <li><a href="#highlights">יתרונות</a></li>
+          <li><a href="#gallery">גלריה</a></li>
+          <li><a href="#map">מפה</a></li>
+          <li><a href="#lead-form">יצירת קשר</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="hero-content">
+        <h1>למכירה — זכות לדירה בשכונה חדשה במזרח ראשון לציון</h1>
+        <p>הזדמנות מוקדמת באזור 'משולש נים', בקרבת עזריאלי ראשונים</p>
+        <div class="price-badge">מחיר פתיחה: ₪999,000</div>
+        <a href="#lead-form" class="btn">מעוניין בפרטים — חזרה אלי</a>
+      </div>
+    </section>
+
+    <section id="highlights" class="highlights">
+      <div class="container">
+        <h2>יתרונות</h2>
+        <div class="highlights-container">
+          <div class="highlight">
+            <div class="highlight-icon">&#128100;</div>
+            <p>ישירות מהבעלים</p>
+          </div>
+          <div class="highlight">
+            <div class="highlight-icon">&#128221;</div>
+            <p>חוזה חתום מול חברה מובילה</p>
+          </div>
+          <div class="highlight">
+            <div class="highlight-icon">&#128176;</div>
+            <p>החל תשלומי פיתוח</p>
+          </div>
+          <div class="highlight">
+            <div class="highlight-icon">&#9989;</div>
+            <p>עבר אישורים</p>
+          </div>
+          <div class="highlight">
+            <div class="highlight-icon">&#128197;</div>
+            <p>זמין — מיידי</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="area-info" class="area-info">
+      <div class="container">
+        <h2>על האזור</h2>
+        <div class="property-size">כ-170 מ״ר (לאשר סופית מול הנציג)</div>
+        <div class="about-area">
+          <br>
+          <br>
+          <p>במזרח ראשון לציון תקום שכונה חדשה עם כ-2,100 יח״ד, מסחר ותעסוקה, מבני ציבור ושטחים פתוחים. בתוכנית 'משולש נים' מתוכננים בנייה עד 30 קומות, חזיתות מסחריות, שבילי אופניים ומרכז ספורט ונופש. המיקום: דרומית לרח׳ קלמן שור, בין דרך 431 ל-4313.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+      <div class="container">
+        <h2>גלריה</h2>
+        <div class="gallery-container">
+          <div class="gallery-item" data-index="0">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIj48cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgZmlsbD0iIzEyMTIxMiIvPjxwYXRoIGQ9Ik0xNTAgMTAwTDI1MCAyMDBMMTUwIDIwMFoiIGZpbGw9IiNDOUE4NTciLz48Y2lyY2xlIGN4PSIyNTAiIGN5PSIxMDAiIHI9IjMwIiBmaWxsPSIjQzlBODU3Ii8+PC9zdmc+" alt="תמונת הדמיה 1" loading="lazy">
+          </div>
+          <div class="gallery-item" data-index="1">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImdyYWQiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiMwRTBFMTA7c3RvcC1vcGFjaXR5OjEiIC8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdHlsZT0ic3RvcC1jb2xvcjojQzlBODU3O3N0b3Atb3BhY2l0eTowLjMiIC8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIzMDAiIGZpbGw9InVybCgjZ3JhZCkiLz48cGF0aCBkPSJNMTAwIDUwTDMwMCAyNTBIMTAwWiIgZmlsbD0iI0M5QTg1NyIgZmlsbC1vcGFjaXR5PSIwLjIiLz48L3N2Zz4=" alt="תמונת הדמיה 2" loading="lazy">
+          </div>
+          <div class="gallery-item" data-index="2">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIj48cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgZmlsbD0iIzEyMTIxMiIvPjxjaXJjbGUgY3g9IjIwMCIgY3k9IjE1MCIgcj0iODAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0M5QTg1NyIgc3Ryb2tlLXdpZHRoPSIyIi8+PHJlY3QgeD0iMTAwIiB5PSIxMDAiIHdpZHRoPSIyMDAiIGhlaWdodD0iMTAwIiBmaWxsPSJub25lIiBzdHJva2U9IiNDOUE4NTciIHN0cm9rZS13aWR0aD0iMiIvPjwvc3ZnPg==" alt="תמונת הדמיה 3" loading="lazy">
+          </div>
+          <div class="gallery-item" data-index="3">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImdyYWQiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiNDOUE4NTc7c3RvcC1vcGFjaXR5OjAuMiIgLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiMwRTBFMTA7c3RvcC1vcGFjaXR5OjEiIC8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIzMDAiIGZpbGw9InVybCgjZ3JhZCkiLz48cG9seWdvbiBwb2ludHM9IjIwMCw1MCAzMDAsMTUwIDIwMCwyNTAgMTAwLDE1MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjQzlBODU3IiBzdHJva2Utd2lkdGg9IjIiLz48L3N2Zz4=" alt="תמונת הדמיה 4" loading="lazy">
+          </div>
+          <div class="gallery-item" data-index="4">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIj48cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgZmlsbD0iIzEyMTIxMiIvPjxsaW5lIHgxPSI1MCIgeTE9IjI1MCIgeDI9IjM1MCIgeTI9IjI1MCIgc3Ryb2tlPSIjQzlBODU3IiBzdHJva2Utd2lkdGg9IjIiLz48cG9seWxpbmUgcG9pbnRzPSI1MCwyMDAgMTUwLDEwMCAyMDAsMTUwIDMwMCw1MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjQzlBODU3IiBzdHJva2Utd2lkdGg9IjIiLz48Y2lyY2xlIGN4PSIzMDAiIGN5PSI1MCIgcj0iMTAiIGZpbGw9IiNDOUE4NTciLz48L3N2Zz4=" alt="תמונת הדמיה 5" loading="lazy">
+          </div>
+          <div class="gallery-item" data-index="5">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIj48ZGVmcz48cmFkaWFsR3JhZGllbnQgaWQ9ImdyYWQiIGN4PSI1MCUiIGN5PSI1MCUiIHI9IjUwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3R5bGU9InN0b3AtY29sb3I6I0M5QTg1NztzdG9wLW9wYWNpdHk6MC4zIiAvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3R5bGU9InN0b3AtY29sb3I6IzBFMEUxMDtzdG9wLW9wYWNpdHk6MSIgLz48L3JhZGlhbEdyYWRpZW50PjwvZGVmcz48cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgZmlsbD0idXJsKCNncmFkKSIvPjxyZWN0IHg9IjEwMCIgeT0iMTAwIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjQzlBODU3IiBzdHJva2Utd2lkdGg9IjIiLz48L3N2Zz4=" alt="תמונת הדמיה 6" loading="lazy">
+          </div>
+          <div class="gallery-item" data-index="6">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIj48cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgZmlsbD0iIzEyMTIxMiIvPjxwYXRoIGQ9Ik0xMDAgMTAwTDMwMCAxMDBMMzAwIDIwMEwxMDAgMjAwWiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjQzlBODU3IiBzdHJva2Utd2lkdGg9IjIiLz48Y2lyY2xlIGN4PSIyMDAiIGN5PSIxNTAiIHI9IjMwIiBmaWxsPSJub25lIiBzdHJva2U9IiNDOUE4NTciIHN0cm9rZS13aWR0aD0iMiIvPjwvc3ZnPg==" alt="תמונת הדמיה 7" loading="lazy">
+          </div>
+          <div class="gallery-item" data-index="7">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImdyYWQiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMCUiIHkyPSIxMDAlIj48c3RvcCBvZmZzZXQ9IjAlIiBzdHlsZT0ic3RvcC1jb2xvcjojMEUwRTEwO3N0b3Atb3BhY2l0eToxIiAvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3R5bGU9InN0b3AtY29sb3I6I0M5QTg1NztzdG9wLW9wYWNpdHk6MC4yIiAvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiBmaWxsPSJ1cmwoI2dyYWQpIi8+PHBhdGggZD0iTTEwMCAyMDBMMzAwIDIwMCIgc3Ryb2tlPSIjQzlBODU3IiBzdHJva2Utd2lkdGg9IjIiLz48cGF0aCBkPSJNMjAwIDEwMEwyMDAgMzAwIiBzdHJva2U9IiNDOUE4NTciIHN0cm9rZS13aWR0aD0iMiIvPjwvc3ZnPg==" alt="תמונת הדמיה 8" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="map" class="map">
+      <div class="container">
+        <h2 class="map-title">המיקום — מזרח ראשון לציון (משולש נים)</h2>
+        <div class="map-container">
+          <iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3384.4277075686!2d34.79961!3d31.948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzHCsDU2JzUyLjgiTiAzNMKwNDgnMTAuOCJF!5e0!3m2!1sen!2sil!4v1628000000000!5m2!1sen!2sil" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="מפת מיקום הפרויקט במזרח ראשון לציון" aria-label="מפת גוגל המציגה את מיקום הפרויקט במזרח ראשון לציון, באזור משולש נים"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="lead-form" class="lead-form">
+      <div class="container">
+        <h2>מעוניינים בפרטים נוספים?</h2>
+        <div class="form-container">
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name">שם מלא</label>
+              <input type="text" id="name" name="name" placeholder="הזינו את שמכם המלא" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">טלפון</label>
+              <input type="tel" id="phone" name="phone" placeholder="הזינו מספר טלפון ישראלי" required dir="rtl">
+            </div>
+            <div class="form-group">
+              <label for="email">אימייל</label>
+              <input type="email" id="email" name="email" placeholder="הזינו כתובת אימייל תקינה" required>
+            </div>
+            <button type="submit" class="btn submit-btn" disabled>נשמר מקומית בלבד</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-brand">נערדיא תיווך, יזמות ונדל״ן</div>
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="#hero">בית</a></li>
+          <li><a href="#highlights">יתרונות</a></li>
+          <li><a href="#gallery">גלריה</a></li>
+          <li><a href="#map">מפה</a></li>
+          <li><a href="#lead-form">יצירת קשר</a></li>
+          <li><a href="#" id="privacy-link">מדיניות פרטיות</a></li>
+        </ul>
+      </nav>
+      <div class="footer-disclaimer">
+        <p>מדובר במכירת זכות לדירה בלבד. המידע כללי ואינו מהווה הצעה מחייבת, ייעוץ משפטי או תחליף לבדיקה עצמאית. התמונות להמחשה בלבד.</p>
+      </div>
+      <div class="year">© 2025</div>
+    </div>
+    <div id="privacy-policy">
+      <h3>מדיניות פרטיות</h3>
+      <p>אנו מכבדים את פרטיותך. המידע שתמסור לנו ישמש אך ורק לצורך יצירת קשר בנוגע לזכות לדירה המוצעת למכירה. לא נעביר את פרטיך לצדדים שלישיים ללא הסכמתך.</p>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal" id="gallery-modal">
+    <div class="modal-content">
+      <img src="" alt="תמונה מוגדלת" class="modal-image">
+      <button class="close-btn" aria-label="סגור">&#10006;</button>
+      <div class="modal-nav">
+        <button class="prev-btn" aria-label="התמונה הקודמת">&#10094;</button>
+        <button class="next-btn" aria-label="התמונה הבאה">&#10095;</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="form-toast">הפרטים נשמרו מקומית בלבד — נציג יחזור אליך לאחר אימות.</div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Mobile menu toggle
+      const menuToggle = document.querySelector('.menu-toggle');
+      const menuList = document.querySelector('.header-nav ul');
+
+      menuToggle.addEventListener('click', function() {
+        menuList.classList.toggle('show');
+      });
+
+      // Close menu when clicking outside
+      document.addEventListener('click', function(event) {
+        if (!event.target.closest('.header-nav') && menuList.classList.contains('show')) {
+          menuList.classList.remove('show');
+        }
+      });
+
+      // Smooth scroll
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          if (this.getAttribute('href') === '#' && this.id === 'privacy-link') {
+            e.preventDefault();
+            document.getElementById('privacy-policy').classList.toggle('show');
+            return;
+          }
+
+          if (this.getAttribute('href').startsWith('#')) {
+            e.preventDefault();
+            
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+            
+            const targetElement = document.querySelector(targetId);
+            if (!targetElement) return;
+            
+            const headerHeight = document.querySelector('header').offsetHeight;
+            
+            window.scrollTo({
+              top: targetElement.offsetTop - headerHeight,
+              behavior: 'smooth'
+            });
+
+            // Update active link
+            document.querySelectorAll('.header-nav a').forEach(link => {
+              link.classList.remove('active');
+            });
+            this.classList.add('active');
+
+            // Close mobile menu after click
+            if (menuList.classList.contains('show')) {
+              menuList.classList.remove('show');
+            }
+          }
+        });
+      });
+
+      // Highlight active section on scroll
+      window.addEventListener('scroll', function() {
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.header-nav a');
+        const headerHeight = document.querySelector('header').offsetHeight;
+        
+        let current = '';
+        
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop - headerHeight - 100;
+          const sectionHeight = section.offsetHeight;
+          
+          if (window.pageYOffset >= sectionTop && window.pageYOffset < sectionTop + sectionHeight) {
+            current = '#' + section.getAttribute('id');
+          }
+        });
+        
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === current) {
+            link.classList.add('active');
+          }
+        });
+      });
+
+      // Form validation
+      const form = document.getElementById('contact-form');
+      const nameInput = document.getElementById('name');
+      const phoneInput = document.getElementById('phone');
+      const emailInput = document.getElementById('email');
+      const submitBtn = document.querySelector('.submit-btn');
+      const toast = document.getElementById('form-toast');
+
+      function validateForm() {
+        const nameValid = nameInput.value.trim().length >= 2;
+        const phoneValid = /^0\d{8,9}$/.test(phoneInput.value.trim()); // Israeli phone format
+        const emailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailInput.value.trim());
+        
+        submitBtn.disabled = !(nameValid && phoneValid && emailValid);
+        
+        return nameValid && phoneValid && emailValid;
+      }
+
+      // Validate on input
+      [nameInput, phoneInput, emailInput].forEach(input => {
+        input.addEventListener('input', validateForm);
+      });
+
+      // Form submission
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        if (validateForm()) {
+          // Store data locally (no server submission)
+          const formData = {
+            name: nameInput.value.trim(),
+            phone: phoneInput.value.trim(),
+            email: emailInput.value.trim(),
+            timestamp: new Date().toISOString()
+          };
+          
+          // Save to localStorage
+          try {
+            const savedLeads = JSON.parse(localStorage.getItem('propertyLeads') || '[]');
+            savedLeads.push(formData);
+            localStorage.setItem('propertyLeads', JSON.stringify(savedLeads));
+            
+            // Show success message
+            toast.classList.add('show');
+            setTimeout(() => {
+              toast.classList.remove('show');
+            }, 5000);
+            
+            // Reset form
+            form.reset();
+            submitBtn.disabled = true;
+          } catch (error) {
+            console.error('Error saving form data:', error);
+          }
+        }
+      });
+
+      // Gallery modal
+      const galleryItems = document.querySelectorAll('.gallery-item');
+      const modal = document.getElementById('gallery-modal');
+      const modalImage = modal.querySelector('.modal-image');
+      const closeBtn = modal.querySelector('.close-btn');
+      const prevBtn = modal.querySelector('.prev-btn');
+      const nextBtn = modal.querySelector('.next-btn');
+      let currentIndex = 0;
+
+      function openModal(index) {
+        const imgSrc = galleryItems[index].querySelector('img').src;
+        const imgAlt = galleryItems[index].querySelector('img').alt;
+        
+        modalImage.src = imgSrc;
+        modalImage.alt = imgAlt;
+        currentIndex = index;
+        
+        modal.classList.add('show');
+        document.body.style.overflow = 'hidden'; // Prevent scrolling
+      }
+
+      function closeModal() {
+        modal.classList.remove('show');
+        document.body.style.overflow = ''; // Restore scrolling
+      }
+
+      function showPrevImage() {
+        currentIndex = (currentIndex - 1 + galleryItems.length) % galleryItems.length;
+        const imgSrc = galleryItems[currentIndex].querySelector('img').src;
+        const imgAlt = galleryItems[currentIndex].querySelector('img').alt;
+        
+        modalImage.src = imgSrc;
+        modalImage.alt = imgAlt;
+      }
+
+      function showNextImage() {
+        currentIndex = (currentIndex + 1) % galleryItems.length;
+        const imgSrc = galleryItems[currentIndex].querySelector('img').src;
+        const imgAlt = galleryItems[currentIndex].querySelector('img').alt;
+        
+        modalImage.src = imgSrc;
+        modalImage.alt = imgAlt;
+      }
+
+      // Open modal on gallery item click
+      galleryItems.forEach((item, index) => {
+        item.addEventListener('click', () => openModal(index));
+      });
+
+      // Close modal on button click
+      closeBtn.addEventListener('click', closeModal);
+
+      // Close modal on outside click
+      modal.addEventListener('click', function(e) {
+        if (e.target === modal) {
+          closeModal();
+        }
+      });
+
+      // Navigate images
+      prevBtn.addEventListener('click', showPrevImage);
+      nextBtn.addEventListener('click', showNextImage);
+
+      // Keyboard navigation
+      document.addEventListener('keydown', function(e) {
+        if (!modal.classList.contains('show')) return;
+        
+        if (e.key === 'ArrowLeft') {
+          showNextImage(); // RTL layout, so left arrow shows next
+        } else if (e.key === 'ArrowRight') {
+          showPrevImage(); // RTL layout, so right arrow shows previous
+        } else if (e.key === 'Escape') {
+          closeModal();
+        }
+      });
+
+      // Touch swipe for mobile
+      let touchStartX = 0;
+      let touchEndX = 0;
+      
+      modal.addEventListener('touchstart', function(e) {
+        touchStartX = e.changedTouches[0].screenX;
+      }, false);
+      
+      modal.addEventListener('touchend', function(e) {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+      }, false);
+      
+      function handleSwipe() {
+        if (touchEndX < touchStartX) {
+          showPrevImage(); // RTL layout, swipe right to left shows previous
+        }
+        if (touchEndX > touchStartX) {
+          showNextImage(); // RTL layout, swipe left to right shows next
+        }
+      }
+    });
+  </script>
+</body>
+</html>
