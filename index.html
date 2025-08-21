@@ -707,7 +707,7 @@
       }
     }
   </style>
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
 </head>
 <body>
   <div class="progress-bar" id="progress-bar"></div>
@@ -883,16 +883,11 @@
 
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-      // Typed text effect for hero title using Typed.js
+      // Fade-in effect for hero title using GSAP
       const heroTitle = document.querySelector('.hero h1');
       const originalTitle = heroTitle.textContent;
       if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-        heroTitle.textContent = '';
-        new Typed(heroTitle, {
-          strings: [originalTitle],
-          typeSpeed: 50,
-          showCursor: false
-        });
+        gsap.from(heroTitle, {opacity: 0, y: 20, duration: 1});
       } else {
         heroTitle.textContent = originalTitle;
       }
